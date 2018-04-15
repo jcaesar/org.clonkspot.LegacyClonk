@@ -1,8 +1,8 @@
 {
 	"app-id": "org.openclonk.OpenClonk",
-	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "1.6",
-	"sdk": "org.freedesktop.Sdk",
+	"runtime": "org.kde.Platform",
+	"runtime-version": "5.10",
+	"sdk": "org.kde.Sdk",
 	"command": "openclonk",
 	"rename-desktop-file": "openclonk.desktop",
 	"rename-icon": "openclonk",
