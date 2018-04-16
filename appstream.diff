@@ -1,16 +1,13 @@
 --- openclonk/openclonk.appdata.xml	2018-03-18 07:09:52.083275491 +0100
-+++ openclonk-flathub/openclonk.appdata.xml	2018-03-19 12:19:45.567991263 +0100
-@@ -1,8 +1,8 @@
++++ openclonk-flathub/openclonk.appdata.xml	2018-04-17 01:20:12.128173916 +0200
+@@ -1,6 +1,6 @@
  <?xml version="1.0" encoding="UTF-8"?>
  <component type="desktop">
 -  <id>openclonk.desktop</id>
 +  <id>org.openclonk.OpenClonk.desktop</id>
    <metadata_license>CC0-1.0</metadata_license>
--  <project_license>ISC and CC-BY-3.0</project_license>
-+  <project_license>ISC and CC-BY-3.0 and LicenseRef-proprietary=http://www.openclonk.org/download/music/License.txt</project_license>
+   <project_license>ISC and CC-BY-3.0</project_license>
    <name>OpenClonk</name>
-   <summary>Multiplayer action game where you control small and nimble humanoids</summary>
-   <description>
 @@ -25,4 +25,48 @@
      </screenshot>
    </screenshots>
