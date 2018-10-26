@@ -1,7 +1,7 @@
 {
 	"app-id": "org.openclonk.OpenClonk",
 	"runtime": "org.kde.Platform",
-	"runtime-version": "5.10",
+	"runtime-version": "5.11",
 	"sdk": "org.kde.Sdk",
 	"command": "openclonk",
 	"rename-desktop-file": "openclonk.desktop",
@@ -39,7 +39,7 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://git.openclonk.org/openclonk.git/archive/openclonk-release-8.1-src.tar.bz2",
+					"url": "https://www.openclonk.org//builds/release/8.1/openclonk-8.1-src.tar.bz2",
 					"sha256": "337677f25457e7137eac7818adb4ad02992d562593386c19b885738aaec4b346"
 				},
 				{
