@@ -13,7 +13,8 @@
 		"--persist=.clonk",
 		"--socket=pulseaudio",
 		"--device=dri",
-		"--share=ipc"
+		"--share=ipc",
+		"--env=SDL_VIDEODRIVER=x11"
 	],
 	"modules": [
 		"shared-modules/glew/glew.json",
