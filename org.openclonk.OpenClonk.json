@@ -50,6 +50,10 @@
 				{
 					"type": "patch",
 					"path": "appstream.diff"
+				},
+				{
+					"type": "patch",
+					"path": "numeric-limits.diff"
 				}
 			],
 			"buildsystem": "cmake",

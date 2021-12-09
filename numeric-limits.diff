@@ -1,0 +1,10 @@
+--- a/src/C4Include.h	2018-03-17 02:25:33.000000000 +0900
++++ b/src/C4Include.h	2021-12-09 22:47:04.502059977 +0900
+@@ -51,6 +51,7 @@
+ #include <cstring>
+ #include <ctime>
+ #include <iostream>
++#include <limits>
+ #include <list>
+ #include <map>
+ #include <memory>
