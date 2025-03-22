@@ -1,3 +1,9 @@
 [submodule "flathub-shared-modules"]
-	path = shared-modules
+	path = modules/shared
 	url = https://github.com/flathub/shared-modules
+[submodule "org.srb2.SRB2"]
+	path = modules/org.srb2.SRB2
+	url = https://github.com/flathub/org.srb2.SRB2/
+[submodule "modules/org.tuxpaint.Tuxpaint"]
+	path = modules/org.tuxpaint.Tuxpaint
+	url = https://github.com/flathub/org.tuxpaint.Tuxpaint/
