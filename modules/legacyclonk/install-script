@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -eu
+
+for f in planet/*.c4?; do
+	echo -n "$f: "
+	./c4group $f -p
+done
+install -Dm444 -t /app/data content/* planet/*.c4?
+install -Dm755 clonk /app/data/clonk
+install -Dm555 wrapper /app/bin/clonk
+install -Dm444 appdata.xml /app/share/appdata/legacyclonk.appdata.xml
+install -Dm444 src/res/*LegacyClonk.desktop /app/share/applications/legacyclonk.desktop
+for s in 32 64 128 256 512; do
+	magick src/res/lc.png -resize $s'x'$s lc-$s.png
+	install -Dm444 lc-$s.png /app/share/icons/hicolor/$s'x'$s/apps/legacyclonk.png
+done

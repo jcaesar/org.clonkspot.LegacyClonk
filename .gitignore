@@ -1,3 +1,5 @@
 .*.swp
 app-dir
 .flatpak-builder
+*.flatpak
+repo

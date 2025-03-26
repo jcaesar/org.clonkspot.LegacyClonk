@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>org.clonkspot.LegacyClonk</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>ISC and CC-BY-3.0</project_license>
+  <name>LegacyClonk</name>
+  <summary>Multiplayer action game where you control small and nimble humanoids</summary>
+  <description>
+    <p>
+      LegacyClonk is a fan project based on Clonk Rage. LegacyClonk continues to receive updates and ensures compatibility with existing Clonk Rage content.
+    </p>
+    <p>
+      The goal is to fix as many bugs and inelegances as possible, improving quality-of-life and adding nice-to-have features while not impacting the gameplay we’re all used to.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>http://clonk.de/gallery/cr/worlds_goldmine.jpg</image>
+      <caption>Gold Mine</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://forum.clonkspot.org/c/projekte/legacyclonk/</url>
+  <content_rating type="oars-1.0">
+    <content_attribute id="violence-cartoon">moderate</content_attribute>
+    <content_attribute id="violence-fantasy">moderate</content_attribute>
+    <content_attribute id="violence-realistic">none</content_attribute>
+    <content_attribute id="violence-bloodshed">none</content_attribute>
+    <content_attribute id="violence-sexual">none</content_attribute>
+    <content_attribute id="drugs-alcohol">moderate</content_attribute>
+    <content_attribute id="drugs-narcotics">none</content_attribute>
+    <content_attribute id="drugs-tobacco">none</content_attribute>
+    <content_attribute id="sex-nudity">none</content_attribute>
+    <content_attribute id="sex-themes">none</content_attribute>
+    <content_attribute id="language-profanity">none</content_attribute>
+    <content_attribute id="language-humor">mild</content_attribute>
+    <content_attribute id="language-discrimination">none</content_attribute>
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">mild</content_attribute>
+    <content_attribute id="social-audio">none</content_attribute>
+    <content_attribute id="social-location">none</content_attribute>
+    <content_attribute id="social-contacts">none</content_attribute>
+    <content_attribute id="money-purchasing">none</content_attribute>
+    <content_attribute id="money-gambling">none</content_attribute>
+  </content_rating>
+  <releases>
+    <!-- git tag | while read t; do echo "<release version=\"${t/v/}\" date=\"$(date -d "$(git show -s -\-format=%ci $t | tail -n1)" +%Y-%m-%d)\" />"; done | sort -Vr -->
+    <release version="362" date="2025-02-08" />
+    <release version="361" date="2024-12-09" />
+    <release version="360" date="2024-12-01" />
+    <release version="359" date="2023-11-01" />
+    <release version="358" date="2023-06-12" />
+    <release version="357" date="2023-03-18" />
+    <release version="356" date="2023-03-10" />
+    <release version="355" date="2022-05-09" />
+    <release version="354" date="2022-04-20" />
+    <release version="353" date="2022-04-19" />
+    <release version="352" date="2022-02-28" />
+    <release version="351" date="2022-02-26" />
+    <release version="350" date="2022-02-20" />
+    <release version="349" date="2021-12-13" />
+    <release version="348" date="2021-04-09" />
+    <release version="347" date="2021-03-25" />
+    <release version="346" date="2021-03-22" />
+    <release version="345" date="2020-11-02" />
+    <release version="344" date="2020-10-29" />
+    <release version="343" date="2020-09-13" />
+    <release version="342" date="2020-08-30" />
+    <release version="341" date="2020-08-23" />
+    <release version="340" date="2020-04-19" />
+    <release version="339" date="2020-03-06" />
+    <release version="338" date="2020-02-27" />
+    <release version="337" date="2019-10-13" />
+    <release version="336" date="2019-10-12" />
+    <release version="335" date="2019-09-05" />
+    <release version="334" date="2019-09-02" />
+    <release version="333" date="2019-08-08" />
+    <release version="332" date="2019-06-19" />
+    <release version="331" date="2019-05-17" />
+    <release version="330" date="2019-05-30" />
+  </releases>
+  <launchable type="desktop-id">org.clonkspot.LegacyClonk.desktop</launchable>
+  <developer_name>LegacyClonk contributors</developer_name>
+</component>

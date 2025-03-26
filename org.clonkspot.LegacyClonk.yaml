@@ -5,7 +5,7 @@
   sdk: "org.freedesktop.Sdk",
   command: clonk,
   "rename-desktop-file": "legacyclonk.desktop",
-  # "rename-icon": legacyclonk,
+  "rename-icon": "legacyclonk",
   "rename-appdata-file": "legacyclonk.appdata.xml",
   "finish-args": [
     "--socket=x11",
@@ -22,53 +22,6 @@
     "modules/org.srb2.SRB2/local-modules/miniupnpc.json",
     "modules/spdlog.yaml",
     "modules/org.tuxpaint.Tuxpaint/ImageMagick.json",
-    {
-      name: legacyclonk,
-      sources: [
-        {
-          type: archive,
-          url: "https://github.com/legacyclonk/LegacyClonk/archive/refs/tags/v362.tar.gz",
-          sha256: "8135bfd018226229cd96596f589a1027a72f4f1e66d81379a3a4eeb4629f060c",
-        },
-        {
-          type: archive,
-          url: "https://github.com/legacyclonk/LegacyClonk/releases/download/v362/content.zip",
-          sha256: "5ceb65067505a8b41b2de6863bdde9d519314490e031ff01289d15580d6d9701",
-          dest: content,
-        },
-        {
-          type: file,
-          path: wrapper,
-        },
-        {
-          type: patch,
-          path: "use-system-spdlog.patch",
-        },
-      ],
-      buildsystem: "cmake-ninja",
-      "config-opts": [
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DWITH_DEVELOPER_MODE=true",
-        "-DUSE_SYSTEM_SPDLOG=true",
-      ],
-      "build-commands": [
-        "for f in planet/*.c4?; do ./c4group $f -p; done",
-        "magick src/res/lc.png -resize 256x256 src/res/lc-256x256.png",
-      ],
-      "post-install": [
-        "install -Dm444 -t /app/data content/* planet/*.c4?",
-        "install -Dm755 clonk /app/data/clonk",
-        "install -Dm555 wrapper /app/bin/clonk",
-        "\
-          install -Dm444 src/res/io.github.legacyclonk.LegacyClonk.desktop
-          /app/share/applications/legacyclonk.desktop\
-        ",
-        # "install -Dm444 src/res/lc-256x256.png /app/share/icons/hicolor/256x256/apps/legacyclonk.png",
-      ],
-      no-make-install: true,
-		  cleanup: [
-		    "/lib/debug",
-		  ],
-    },
+    "modules/legacyclonk/module.yaml",
   ],
 }

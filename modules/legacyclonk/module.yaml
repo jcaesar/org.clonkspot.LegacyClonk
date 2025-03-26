@@ -1,0 +1,45 @@
+{
+  name: legacyclonk,
+  sources: [
+    {
+      type: archive,
+      url: "https://github.com/legacyclonk/LegacyClonk/archive/refs/tags/v362.tar.gz",
+      sha256: "8135bfd018226229cd96596f589a1027a72f4f1e66d81379a3a4eeb4629f060c",
+    },
+    {
+      type: archive,
+      url: "https://github.com/legacyclonk/LegacyClonk/releases/download/v362/content.zip",
+      sha256: "5ceb65067505a8b41b2de6863bdde9d519314490e031ff01289d15580d6d9701",
+      dest: content,
+    },
+    {
+      type: patch,
+      path: "use-system-spdlog.patch",
+    },
+    {
+      type: file,
+      path: "appdata.xml",
+    },
+    {
+      type: file,
+      path: wrapper,
+    },
+    {
+      type: file,
+      path: "install-script",
+    },
+  ],
+  buildsystem: "cmake-ninja",
+  "config-opts": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DWITH_DEVELOPER_MODE=true",
+    "-DUSE_SYSTEM_SPDLOG=true",
+  ],
+  "post-install": [
+    "./install-script",
+  ],
+  "no-make-install": true,
+  cleanup: [
+    "/lib/debug",
+  ],
+}

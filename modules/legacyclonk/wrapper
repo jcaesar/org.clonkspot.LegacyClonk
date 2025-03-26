@@ -11,4 +11,4 @@ for f in $rdir/*; do
 	ln -sft "$rwdir" $f
 done
 
-exec "$rwdir"/clonk
+exec "$rwdir"/clonk "$@"
